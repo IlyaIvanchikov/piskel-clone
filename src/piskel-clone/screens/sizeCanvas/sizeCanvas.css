@@ -1,0 +1,10 @@
+#listItem {
+  position: relative;
+  width: 28%;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+  background-color: grey;
+  color: gold;
+  border: solid 2px black;
+  top: 2%;
+}

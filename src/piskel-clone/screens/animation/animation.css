@@ -1,0 +1,33 @@
+#animationCanvas {
+  background-image: url("./img/canvas-background-lowcontrast-dark.png");
+  width: 560;
+  height: 420px;
+  image-rendering: pixelated;
+}
+.animation {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.input {
+  position: relative;
+  width: 100%;
+}
+.valueInput {
+  border-bottom: 4px dashed #bdc3c7;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10em;
+  width: 300px;
+  height: 100px;
+  line-height: 60px;
+  margin: 40px auto;
+  letter-spacing: -.07em;
+  text-shadow: white 2px 2px 2px;
+}
+.fps {
+  position: relative;
+  background-color:grey;
+  font-family: "Dosis", Helvetica, Arial, sans-serif;
+  color: #34495e;
+}

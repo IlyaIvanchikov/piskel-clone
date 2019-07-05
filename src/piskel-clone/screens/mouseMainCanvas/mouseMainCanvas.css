@@ -1,0 +1,12 @@
+.mouseMove {
+  position: relative;
+  width: 25%;
+  height: 3%;
+  background-color:  grey;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+  font-weight: bold;
+  color: gold;
+  top: 3%;
+  border: solid 2px black;
+}

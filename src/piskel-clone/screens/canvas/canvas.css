@@ -1,0 +1,15 @@
+.canvas {
+  position: relative;
+  width:50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:  grey;
+}
+#mainCanvas {
+  width: 620px;
+  height: 620px;
+  image-rendering: pixelated;
+  background-image: url("./img/canvas-background-lowcontrast-dark.png");
+}

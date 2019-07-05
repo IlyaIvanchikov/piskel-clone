@@ -1,0 +1,1 @@
+import './sizeCanvas.css';

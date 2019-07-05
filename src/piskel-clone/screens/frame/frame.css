@@ -1,0 +1,72 @@
+.add {
+  position: relative;
+  width: 63%;
+  height: 7%;
+  left: 19%;
+  top:20px;
+  border: solid 2px black;
+  border-radius: 10%;
+  font-family: "MalagaOT-RegItalic";
+  font-size: 15px;
+  font-weight: 700;
+}
+.add:hover {
+  border: solid 4px yellow;
+}
+.frame {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 20%;
+}
+.counter {
+  display: none;
+}
+#frameCanvasId {
+  background-image: url("./img/canvas-background-lowcontrast-dark.png");
+  position: relative;
+  width: 80%;
+  border: black solid 2px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  image-rendering: pixelated;
+}
+.frameCanvas:hover {
+  border: solid 4px yellow;
+}
+.frame:hover .counter {
+  display: block;
+  position: relative;
+  width: 20%;
+  height: 20%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+.frame:hover .copy {
+  display: block;
+  position: absolute;
+  top:6%;
+  left: 77%;
+  width: 20%;
+  height: 20%;
+  background-image: url("./img/frame-duplicate-white@2x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.copy {
+  display:none;
+}
+.del {
+  display:none;
+}
+.frame:hover .del {
+  display: block;
+  position: absolute;
+  top:74%;
+  left: 77%;
+  width: 20%;
+  height: 20%;
+  background-image: url("./img/frame-recyclebin-white@2x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}

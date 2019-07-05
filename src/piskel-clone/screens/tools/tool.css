@@ -1,0 +1,177 @@
+.tools--all {
+  display: flex;
+  width: 100%;
+  height: 80%;
+  position: relative;
+  top:3%;
+}
+.left {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.left *:hover {
+  border: 1px solid yellow;
+}
+.right{
+  width: 50%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.right *:hover {
+  border: 1px solid yellow;
+}
+.pen {
+  position: relative;
+  border: solid 1px black;
+  width: 100%;
+  height: 12%;
+  background-color: grey;
+  background-image: url("./img/tool-pen.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.paint {
+  position: relative;
+  border: solid 1px black;
+  width: 100%;
+  height: 12%;
+  background-color: grey;
+  background-image: url("./img/tool-paint-bucket.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.eraser {
+  position: relative;
+  border: solid 1px black;
+  width: 100%;
+  height: 12%;
+  background-color: grey;
+  background-image: url("./img/tool-eraser.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.rectangle {
+  position: relative;
+  border: solid 1px black;
+  width: 100%;
+  height: 12%;
+  background-color: grey;
+  background-image: url("./img/tool-rectangle.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.move {
+  position: relative;
+  border: solid 1px black;
+  width: 100%;
+  height: 12%;
+  background-color: grey;
+  background-image: url("./img/tool-move.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.rectangle--selection {
+  position: relative;
+  border: solid 1px black;
+  width: 100%;
+  height: 12%;
+  background-color: grey;
+  background-image: url("./img/tool-rectangle-select.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.lighten {
+  position: relative;
+  border: solid 1px black;
+  width: 100%;
+  height: 12%;
+  background-color: grey;
+  background-image: url("./img/tool-lighten.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.color--picker {
+  position: relative;
+  border: solid 1px black;
+  width: 100%;
+  height: 12%;
+  background-color: grey;
+  background-image: url("./img/tool-colorpicker.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.mirror {
+  position: relative;
+  border: solid 1px black;
+  width: 98%;
+  height: 11.8%;
+  background-color: grey;
+  background-image: url("./img/tool-vertical-mirror-pen.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.paint-all {
+  position: relative;
+  border: solid 1px black;
+  width: 100%;
+  height: 12%;
+  background-color: grey;
+  background-image: url("./img/tool-colorswap.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.stroke {
+  position: relative;
+  border: solid 1px black;
+  width: 100%;
+  height: 12.2%;
+  background-color: grey;
+  background-image: url("./img/tool-stroke.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.circle {
+  position: relative;
+  border: solid 1px black;
+  width: 100%;
+  height: 12%;
+  background-color: grey;
+  background-image: url("./img/tool-circle.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.shape--selection {
+  position: relative;
+  border: solid 1px black;
+  width: 100%;
+  height: 12%;
+  background-color: grey;
+  background-image: url("./img/tool-shape-select.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.lasso {
+  position: relative;
+  border: solid 1px black;
+  width: 100%;
+  height: 12%;
+  background-color: grey;
+  background-image: url("./img/tool-lasso-select.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.dithering {
+  position: relative;
+  border: solid 1px black;
+  width: 100%;
+  height: 12%;
+  background-color: grey;
+  background-image: url("./img//tool-dithering.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}

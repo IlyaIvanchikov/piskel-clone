@@ -1,0 +1,41 @@
+.color {
+  width: 100%;
+  height: 15%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.primaryColor {
+  border: black 2px solid;
+  position: relative;
+  width: 40%;
+  height: 50%;
+  order: 1;
+  left: 10%;
+}
+.secondaryColor {
+  position: relative;
+  border: black 2px solid;
+  width: 40%;
+  height: 50%;
+  order: 2;
+  top: 20%;
+  right: 5%;
+}
+.primaryColor:hover {
+  border: red 3px solid;
+}
+.secondaryColor:hover {
+  border: blue 3px solid;
+}
+.swapColor {
+  position: relative;
+  width: 25%;
+  height: 25%;
+  top: 35%;
+  left: 15%;
+  background-image: url("./img/common-swapcolors-arrow-grey.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}

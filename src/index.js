@@ -1,0 +1,10 @@
+import './piskel-clone/preview/index';
+import './piskel-clone/screens/animation';
+import './piskel-clone/screens/canvas';
+import './piskel-clone/screens/color';
+import './piskel-clone/screens/frame';
+import './piskel-clone/screens/other';
+import './piskel-clone/screens/size';
+import './piskel-clone/screens/tools';
+import './piskel-clone/screens/sizeCanvas';
+import './piskel-clone/screens/mouseMainCanvas';
