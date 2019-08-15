@@ -1,15 +1,17 @@
 // let test;
-const murkup = `
+/* const murkup = `
 <div class = "wrapper">
 <header class="header">
 <div class="div--nav"></div>
 <h1>PiSKEL</h1>
 <h2>New Piskel</h2>
+<button class="button2" tabindex="0">landing Page NOW</button>
 </header>
 <main class="mainMurkup">
 <div class="descriptionMurkup">
 <section class="sectionHeader">
-<p class="p">This project is a Final Task from the Second stage of Rolling Scopes School Q1 2019.</p>
+<p class="p">This project is a Final Task
+from the Second stage of Rolling Scopes School Q1 2019.</p>
 </section>
 <section class="sectionMain">
 <p class="pp">It is a clone of Piskel app.</p>
@@ -23,7 +25,8 @@ const murkup = `
 <li class="li">Rectangle</li>
 <li class="li">Select primary & secondary color</li>
 </ul>
-<p class="ppppp">And also you can use frame management, preview Window, landing Page, custom canvas size, layers, show cursor coordinates / canvas size.</p>
+<p class="ppppp">And also you can use frame management,
+preview Window, landing Page, custom canvas size, layers, show cursor coordinates / canvas size.</p>
 <div class="gif">
 <div class="gif1"></div>
 <div class="gif2"></div>
@@ -35,7 +38,7 @@ const murkup = `
 <footer class="footer">
 <p class="pppppp">Author: Ilya Ivanchikov</p>
 </footer>
-</div>`;
+</div>`; */
 
 const piskel = `
 <div class= "wrapper">
@@ -43,9 +46,8 @@ const piskel = `
 <div class="div--nav"></div>
 <h1>PiSKEL</h1>
 <h2>New Piskel</h2>
-<button class="button2" tabindex="0">landing Page NOW</button>
 </header>
-<main class="main">
+<main class="main1">
 <div class="tools">
 <div class="tools--main">
 <div class ="panel">
@@ -116,18 +118,58 @@ const piskel = `
   <option value="128">128*128</option>
 </select>
 <div class="mouseMove">1</div>
+<button class="exportGif">EXPORT GIF</button>
 </div>
 </main>
+</div>
+<div class = "wrapper1">
+<header class="header">
+<div class="div--nav"></div>
+<h1>PiSKEL</h1>
+<h2>New Piskel</h2>
+<button class="button1" tabindex="0">START</button>
+</header>
+<main class="mainMurkup">
+<div class="descriptionMurkup">
+<section class="sectionHeader">
+<p class="p">This project is a Final Task
+from the Second stage of Rolling Scopes School Q1 2019.</p>
+</section>
+<section class="sectionMain">
+<p class="pp">It is a clone of Piskel app.</p>
+<p class="ppp">Project Functionality</p>
+<p class="pppp">You can use next tools:</p>
+</section>
+<ul class="ul">
+<li class="li">Pen</li>
+<li class="li">Paint bucket</li>
+<li class="li">Eraser</li>
+<li class="li">Rectangle</li>
+<li class="li">Select primary & secondary color</li>
+</ul>
+<p class="ppppp">And also you can use frame management,
+preview Window, landing Page, custom canvas size, layers, show cursor coordinates / canvas size.</p>
+<div class="gif">
+<div class="gif1"></div>
+<div class="gif2"></div>
+<div class="gif3"></div>
+</div>
+</div>
+<div class="animationMurkup"></div>
+</main>
+<footer class="footer">
+<p class="pppppp">Author: Ilya Ivanchikov</p>
+</footer>
 </div>`;
 
 document.body.innerHTML = piskel;
-const piskelCloneMain = document.querySelector('.button2');
-const main = document.querySelector('.main');
-
+const piskelCloneMain = document.querySelector('.button1');
+const wrapper1 = document.querySelector('.wrapper1');
+const wrapper = document.querySelector('.wrapper');
+wrapper.style.display = 'none';
 const piskelCloneRender = () => {
-  main.remove();
-  piskelCloneMain.remove();
-  document.body.innerHTML = murkup;
+  wrapper1.style.display = 'none';
+  wrapper.style.display = 'inline';
 };
 
 piskelCloneMain.addEventListener('click', piskelCloneRender);

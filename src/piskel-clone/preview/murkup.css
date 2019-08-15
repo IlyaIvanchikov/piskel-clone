@@ -17,12 +17,12 @@
 .animationMurkup {
   position: relative;
   width: 60%;
-  height: 100%;
+  height: 80%;
   background-image: url("./img/piskel1.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  bottom: 10%;
+  bottom: 1%;
   right: 3%;
 }
 .sectionHeader {
@@ -126,7 +126,7 @@ background-size: 100% 100%;
   position: relative;
   width: 20%;
   height: 100%;
-  background-image: url('./img/1.gif');
+  background-image: url('./img/mygif.gif');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -151,3 +151,100 @@ background-size: 100% 100%;
   background-position: center;
   background-size: contain;
 }
+
+
+.button1 {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  padding: 10px 10px;
+  margin: 10px 10px;
+  position: relative;
+  color: white;
+  border: 1px solid rgba(255,255,255,.4);
+  background: none;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+  left: 35%;
+}
+.button1:before,
+.button1:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  box-sizing: border-box;
+}
+.button1:before {
+  bottom: 0;
+  left: 0;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+}
+.button1:after {
+  top: 0;
+  right: 0;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  transition: 0s ease opacity .4s, .2s ease width , .2s ease height .2s;
+}
+.button1:hover:before,
+.button1:hover:after{
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+}
+.button1:hover:before {transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;}
+.button1:hover:after {transition: 0s ease opacity .4s, .2s ease height .4s , .2s ease width .6s;}
+.button1:hover {background: rgba(255,255,255,.2);}
+
+
+
+.exportGif {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  padding: 10px 10px;
+  margin: 30px 1px;
+  position: relative;
+  color: white;
+  border: 1px solid rgba(255,255,255,.4);
+  background: none;
+  font-weight: 100;
+  font-family: 'Montserrat', sans-serif;
+  width: 25%;
+}
+.exportGif:before,
+.exportGif:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  box-sizing: border-box;
+}
+.exportGif:before {
+  bottom: 0;
+  left: 0;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+}
+.exportGif:after {
+  top: 0;
+  right: 0;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  transition: 0s ease opacity .4s, .2s ease width , .2s ease height .2s;
+}
+.exportGif:hover:before,
+.exportGif:hover:after{
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+}
+.exportGif:hover:before {transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;}
+.exportGif:hover:after {transition: 0s ease opacity .4s, .2s ease height .4s , .2s ease width .6s;}
+.exportGif:hover {background: rgba(255,255,255,.2);}

@@ -3,10 +3,16 @@ let checkTools;
 let imgDataRectangle;
 const massiv = [];
 const toolsAll = document.querySelector('.tools--all');
-const mainCanvasRectangle = document.getElementById('mainCanvas');
-const rectangleCtx = mainCanvasRectangle.getContext('2d');
 const mainCanvas = document.getElementById('mainCanvas');
 const canvas = mainCanvas.getContext('2d');
+const local = localStorage.getItem('key') || null;
+if (local !== null) {
+  const Image1 = new Image();
+  Image1.src = local;
+  Image1.onload = () => {
+    canvas.drawImage(Image1, 0, 0);
+  };
+}
 let rectangleX;
 let rectangleY;
 const opts = {
@@ -109,9 +115,10 @@ mainCanvas.onmousedown = (e) => {
   // canvas.stroke();
 };
 mainCanvas.onmouseup = () => {
+  const t = mainCanvas.toDataURL('image/png');
+  localStorage.setItem('key', t);
   mainCanvas.removeEventListener('mousemove', pen);
   mainCanvas.removeEventListener('mousemove', eraser);
   mainCanvas.removeEventListener('mousemove', rectangle);
-  console.log(rectangleCtx);
 };
 export { mainCanvas, canvas };

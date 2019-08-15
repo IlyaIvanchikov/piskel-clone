@@ -8,6 +8,14 @@ const frameCanvasId = document.getElementById('frameCanvasId');
 const animationCanvasAll = document.getElementById('animationCanvas');
 let canvasFrame = document.querySelector('.canvas--counter');
 let ctxFrame = canvasFrame.getContext('2d');
+const local = localStorage.getItem('key') || null;
+if (local !== null) {
+  const Image2 = new Image();
+  Image2.src = local;
+  Image2.onload = () => {
+    ctxFrame.drawImage(Image2, 0, 0);
+  };
+}
 const counterCanvas = [ctxFrame];
 const frameMurkup = () => `<div class="frame frame--counter${counter}">
 <input  disabled type="button" class="counter" value=${counter} />

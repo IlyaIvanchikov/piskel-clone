@@ -1,7 +1,9 @@
 import { counterCanvas, frameCanvasId } from '../frame/frame';
 
+
 const elem = document.querySelector('input[type="range"]');
 const addAnimation = document.querySelector('.add');
+const exportGif = document.querySelector('.exportGif');
 let newValue = 4;
 let animationImage = 0;
 let imgAnimation;
@@ -43,5 +45,17 @@ document.addEventListener('keypress', (e) => {
   return r;
 }, false);
 
+const exportGifButton = () => {
+  const encoder = new GIFEncoder();
+  encoder.setRepeat(0);
+  encoder.setDelay(500);
+  encoder.start();
+  for (let i = 0; i < counterCanvas.length; i += 1) {
+    encoder.addFrame(counterCanvas[i]);
+  }
+  encoder.finish();
+  encoder.download('canvas.gif');
+};
+exportGif.addEventListener('click', exportGifButton);
 addAnimation.addEventListener('click', startAnimation);
 elem.addEventListener('input', rangeValue);
